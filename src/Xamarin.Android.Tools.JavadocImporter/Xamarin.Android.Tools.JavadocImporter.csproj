@@ -49,9 +49,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Xml.SgmlReader" Version="1.8.14" />
-    <PackageReference Include="Mono.Options" Version="$(MonoOptionsVersion)" />
-    <PackageReference Include="Xamarin.LibZipSharp" Version="$(LibZipSharpVersion)" />
+    <PackageReference Include="Microsoft.Xml.SgmlReader" />
+    <PackageReference Include="Mono.Options" />
+    <PackageReference Include="Xamarin.LibZipSharp" />
   </ItemGroup>
 
   <Import Project="..\..\external\Java.Interop\src\Java.Interop.Tools.TypeNameMappings\Java.Interop.Tools.TypeNameMappings.projitems" Label="Shared" Condition="Exists('..\..\external\Java.Interop\src\Java.Interop.Tools.TypeNameMappings\Java.Interop.Tools.TypeNameMappings.projitems')" />

@@ -7,12 +7,14 @@
     <OutputPath>$(MicrosoftAndroidSdkOutDir)</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.ILLink" Version="$(MicrosoftNETILLinkTasksPackageVersion)" />
+    <PackageReference Include="Microsoft.NET.ILLink" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\external\Java.Interop\src\Java.Interop.Export\Java.Interop.Export.csproj" />
     <ProjectReference Include="..\Xamarin.Android.Build.Tasks\Xamarin.Android.Build.Tasks.csproj" ReferenceOutputAssembly="False" />
-
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="..\Xamarin.Android.Build.Tasks\obj\$(Configuration)\Profile.g.cs" Link="Profile.g.cs" />
-
     <!--Include *everything* to start with-->
     <Compile Include="..\Xamarin.Android.Build.Tasks\Linker\MonoDroid.Tuner\*.cs" Link="MonoDroid.Tuner\%(FileName).cs" />
     <Compile Include="..\Xamarin.Android.Build.Tasks\Linker\Mobile.Tuner\*.cs" Link="Mobile.Tuner\%(FileName).cs" />
