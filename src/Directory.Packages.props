@@ -1,0 +1,39 @@
+<Project>
+    <Import Project="..\Configuration.props" />
+    <Import Project="..\Directory.Build.props" />
+
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageVersion Include="Microsoft.Xml.SgmlReader" Version="1.8.14" />
+        <PackageVersion Include="Mono.Options" Version="$(MonoOptionsVersion)" />
+        <PackageVersion Include="Xamarin.LibZipSharp" Version="$(LibZipSharpVersion)" />
+        <PackageVersion Include="Xamarin.AndroidX.Wear" Version="1.2.0.5" />
+        <PackageVersion Include="Microsoft.TemplateEngine.Tasks" Version="$(MicrosoftTemplateEngineTasksPackageVersion)" PrivateAssets="all" IsImplicitlyDefined="true" />
+        <PackageVersion Include="ELFSharp" Version="$(ELFSharpVersion)" />
+        <PackageVersion Include="ICSharpCode.Decompiler" Version="7.2.1.6856" />
+        <PackageVersion Include="Microsoft.Win32.Registry" Version="5.0.0" />
+        <PackageVersion Include="ILRepack" Version="2.0.18" />
+        <PackageVersion Include="Irony" Version="1.1.0" />
+        <PackageVersion Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
+        <PackageVersion Include="NuGet.Common" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.Configuration" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.DependencyResolver.Core" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.Frameworks" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.LibraryModel" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.Packaging" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.Packaging.Core" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.ProjectModel" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.Protocol" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="NuGet.Versioning" Version="$(NuGetApiPackageVersion)" />
+        <PackageVersion Include="System.CodeDom" Version="7.0.0" />
+        <PackageVersion Include="System.Reflection.Metadata" Version="6.0.1" />
+        <PackageVersion Include="System.Runtime" Version="4.3.1" />
+        <PackageVersion Include="System.Runtime.InteropServices" Version="4.3.0" />
+        <PackageVersion Include="K4os.Hash.xxHash" Version="1.0.6" />
+        <PackageVersion Include="ELFSharp" Version="$(ELFSharpVersion)" />
+        <PackageVersion Include="Microsoft.NET.ILLink" Version="$(MicrosoftNETILLinkTasksPackageVersion)" />
+    </ItemGroup>
+</Project>
